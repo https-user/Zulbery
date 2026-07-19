@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Checkout | Zulbery's Kitchen</title>
+
+<link rel="stylesheet" href="checkout.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<header class="checkout-navbar">
+
+    <a href="cart.html" class="back-btn">
+        <i class="fa-solid fa-arrow-left"></i>
+    </a>
+
+    <h2>Checkout</h2>
+
+</header>
+
+<section class="checkout-container">
+
+    <div class="checkout-left">
+
+        <h3>Delivery Information</h3>
+
+        <form id="checkoutForm">
+
+            <div class="input-box">
+                <label>Full Name</label>
+                <input type="text" id="name" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="input-box">
+                <label>Phone Number</label>
+                <input type="tel" id="phone" placeholder="03XX-XXXXXXX" required>
+            </div>
+
+            <div class="input-box">
+                <label>Delivery Address</label>
+                <textarea id="address" rows="4" placeholder="House No, Street, Area" required></textarea>
+            </div>
+
+            <div class="input-box">
+
+                <label>City</label>
+
+                <div class="city-select">
+
+                    <input
+                        type="text"
+                        id="city"
+                        placeholder="Search your city..."
+                        autocomplete="off"
+                        required
+                    >
+
+                    <div class="city-list" id="cityList">
+
+                        <div class="city-option">Lahore</div>
+                        <div class="city-option">Karachi</div>
+                        <div class="city-option">Islamabad</div>
+                        <div class="city-option">Rawalpindi</div>
+                        <div class="city-option">Faisalabad</div>
+                        <div class="city-option">Multan</div>
+                        <div class="city-option">Peshawar</div>
+                        <div class="city-option">Quetta</div>
+                        <div class="city-option">Sialkot</div>
+                        <div class="city-option">Gujranwala</div>
+                        <div class="city-option">Hyderabad</div>
+                        <div class="city-option">Bahawalpur</div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="payment-box">
+
+                <h4>Payment Method</h4>
+
+                <label class="payment-option">
+
+                    <input type="radio" name="payment" value="cod" checked>
+
+                    <span>
+                        <i class="fa-solid fa-money-bill-wave"></i>
+                        Cash On Delivery
+                    </span>
+
+                </label>
+
+                <label class="payment-option">
+
+                    <input type="radio" name="payment" value="online">
+
+                    <span>
+                        <i class="fa-solid fa-credit-card"></i>
+                        Online Payment
+                    </span>
+
+                </label>
+
+                
+
+            </div>
+
+        </form>
+
+    </div>
+
+    <div class="checkout-right">
+
+        <h3>Order Summary</h3>
+
+        <div id="checkoutItems"></div>
+
+        <div class="summary">
+
+            <div class="row">
+                <span>Subtotal</span>
+                <span id="subtotal">Rs. 0</span>
+            </div>
+
+            <div class="row">
+                <span>Delivery</span>
+                <span>Rs. 200</span>
+            </div>
+
+            <div class="row total">
+                <span>Total</span>
+                <span id="total">Rs. 200</span>
+            </div>
+
+        </div>
+
+        <button id="placeOrderBtn" class="place-order-btn">
+            Place Order
+        </button>
+
+    </div>
+
+</section>
+
+<div id="successPopup" class="success-popup">
+
+    <i class="fa-solid fa-circle-check"></i>
+
+    <h2>Order Placed!</h2>
+
+    <p>Thank you for ordering from Zulbery's Kitchen.</p>
+
+    <button onclick="goHome()">Continue</button>
+
+</div>
+
+<div id="overlay" class="overlay"></div>
+
+<script src="checkout.js"></script>
+
+</body>
+</html>

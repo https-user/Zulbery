@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Zulbery's Kitchen</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div id="loader">
+
+    <div class="loader-content">
+
+        <div class="loader-ring"></div>
+
+        <h2>Zulbery's Kitchen</h2>
+
+        <p>Preparing something delicious...</p>
+
+    </div>
+
+</div>
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        <img src="logo.png" alt="Zulbery's Kitchen Logo">
+        <div class="logo-text">
+            <strong>Zulbery's</strong>
+            <span>Kitchen</span>
+        </div>
+    </a>
+
+    <nav>
+
+        <ul class="nav-links">
+
+            <li><a class="active" href="index.html">Home</a></li>
+
+            <li><a href="menu.html">Menu</a></li>
+
+            <li><a href="about.html">About</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+
+    </nav>
+
+    <div class="nav-icons">
+
+        <a href="#" id="searchBtn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+
+        <a href="#">
+            <i class="fa-regular fa-heart"></i>
+        </a>
+
+        <a href="cart.html" class="cart-link">
+
+    <i class="fa-solid fa-cart-shopping"></i>
+
+    <span id="cartBadge">0</span>
+
+</a>
+
+        <button class="order-btn" onclick="window.location.href='menu.html'">
+            Order Now
+        </button>
+
+    </div>
+
+    <div class="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+</header>
+
+
+
+<!-- HERO SECTION -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>
+            Crafted For
+            <br>
+            Food Lovers
+        </h1>
+
+
+
+        <p class="hero-subtext">
+            Signature burgers, artisanal pizzas, and handcrafted sides served with polished hospitality.
+        </p>
+
+        <div class="hero-buttons">
+            <button class="order-btn" onclick="window.location.href='menu.html'">
+    Order Now
+</button>
+            <a href="menu.html" class="btn2">Explore Menu</a>
+        </div>
+
+    </div>
+
+    
+
+</section>
+
+
+<section class="featured">
+
+    <div class="section-title">
+        <span>CHEF'S CHOICE</span>
+        <h2>Featured Menu</h2>
+    </div>
+
+    <div class="featured-grid">
+
+        <div class="featured-card">
+
+            <img src="item-1.png" alt="">
+
+            <div class="featured-content">
+
+                <span>Best Seller</span>
+
+                <h3>Ultimate Zinger Burger</h3>
+
+                <p>
+                    Crispy chicken, cheddar cheese, fresh lettuce and our special sauce.
+                </p>
+
+                <div class="featured-bottom">
+
+                    <h4>Rs. 650</h4>
+
+                    <a href="product.html">Order Now</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="featured-card">
+
+            <img src="item-2.jpg" alt="">
+
+            <div class="featured-content">
+
+                <span>Most Loved</span>
+
+                <h3>Chicken Fajita Pizza</h3>
+
+                <p>
+                    Loaded with mozzarella cheese and premium toppings.
+                </p>
+
+                <div class="featured-bottom">
+
+                    <h4>Rs. 1499</h4>
+
+                    <a href="item3.html">Order Now</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- POPULAR ITEMS -->
+
+<section class="popular">
+
+    <div class="section-title">
+        <span>BEST SELLERS</span>
+        <h2>Popular items</h2>
+    </div>
+
+    <div class="food-grid">
+
+        <div class="food-card">
+            <div class="food-img">
+                <img src="item-6.jpg" alt="">
+            </div>
+
+            <div class="food-content">
+                <h3>Beef Burger</h3>
+                <p>Flame-grilled beef patty, fresh lettuce & special sauce.</p>
+
+                <div class="food-bottom">
+                    <span>Rs.750</span>
+                    <button onclick="window.location.href='item2.html'">Order Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="food-card">
+            <div class="food-img">
+                <img src="item-2.jpg" alt="">
+            </div>
+
+            <div class="food-content">
+                <h3>Chicken Fajita Pizza</h3>
+                <p>Spiced chicken, crisp peppers, and onions on a cheesy crust.</p>
+
+                <div class="food-bottom">
+                    <span>Rs.1499</span>
+                    <button onclick="window.location.href='item3.html'">Order Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="food-card">
+            <div class="food-img">
+                <img src="item-5.jpg" alt="">
+            </div>
+
+            <div class="food-content">
+                <h3>Loaded Fries</h3>
+                <p>Crispy fries with cheese & spicy sauce.</p>
+
+                <div class="food-bottom">
+                    <span>Rs.499</span>
+                    <button onclick="window.location.href='item7.html'">Order Now</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<section class="testimonials">
+
+    <div class="section-title">
+        <span>TESTIMONIALS</span>
+        <h2>What Our Customers Say</h2>
+    </div>
+
+    <div class="testimonial-grid">
+
+        <div class="testimonial-card">
+
+            <div class="stars">★★★★★</div>
+
+            <p>
+                The burgers are amazing and the delivery is always on time.
+                Highly recommended.
+            </p>
+
+            <h4>Ali Khan</h4>
+
+        </div>
+
+        <div class="testimonial-card">
+
+            <div class="stars">★★★★★</div>
+
+            <p>
+                Best pizza in town. Fresh ingredients and excellent service.
+            </p>
+
+            <h4>Ahmed Raza</h4>
+
+        </div>
+
+        <div class="testimonial-card">
+
+            <div class="stars">★★★★★</div>
+
+            <p>
+                Beautiful presentation and delicious taste. Will order again.
+            </p>
+
+            <h4>Fatima Noor</h4>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="why">
+
+    <div class="section-title">
+        <span>WHY CHOOSE US</span>
+        <h2>Experience the Zulbery Difference</h2>
+    </div>
+
+    <div class="why-grid">
+
+        <div class="why-card">
+            <div class="why-icon">
+                <i class="fa-solid fa-burger"></i>
+            </div>
+            <h3>Fresh Ingredients</h3>
+            <p>We prepare every meal using fresh, premium quality ingredients.</p>
+        </div>
+
+        <div class="why-card">
+            <div class="why-icon">
+                <i class="fa-solid fa-truck-fast"></i>
+            </div>
+            <h3>Fast Delivery</h3>
+            <p>Quick delivery so your food arrives hot and fresh.</p>
+        </div>
+
+        <div class="why-card">
+            <div class="why-icon">
+                <i class="fa-solid fa-award"></i>
+            </div>
+            <h3>Premium Quality</h3>
+            <p>Every order is made with care to maintain the highest quality.</p>
+        </div>
+
+        <div class="why-card">
+            <div class="why-icon">
+                <i class="fa-solid fa-headset"></i>
+            </div>
+            <h3>Customer First</h3>
+            <p>Friendly service and complete customer satisfaction.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="faq">
+
+    <div class="section-title">
+        <span>FAQ</span>
+        <h2>Frequently Asked Questions</h2>
+    </div>
+
+    <div class="faq-container">
+
+        <div class="faq-item">
+            <button class="faq-question">
+                What are your opening hours?
+                <span>+</span>
+            </button>
+            <div class="faq-answer">
+                <p>We are open daily from 11:00 AM to 11:00 PM.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                Do you offer home delivery?
+                <span>+</span>
+            </button>
+            <div class="faq-answer">
+                <p>Yes, we provide fast home delivery.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                Which payment methods do you accept?
+                <span>+</span>
+            </button>
+            <div class="faq-answer">
+                <p>We accept Cash on Delivery and also Online Payments</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-box">
+            <img src="logo.png" alt="Logo">
+
+            <p>
+                Fresh food, premium quality and fast delivery.
+            </p>
+        </div>
+
+        <div class="footer-box">
+
+            <h3>Quick Links</h3>
+
+            <a href="index.html">Home</a>
+
+            <a href="menu.html">Menu</a>
+
+            <a href="about.html">About</a>
+
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+        <div class="footer-box">
+
+            <h3>Opening Hours</h3>
+
+            <p>Monday - Sunday</p>
+            <p>11:00 AM - 11:00 PM</p>
+
+        </div>
+
+        <div class="footer-box">
+
+            <h3>Follow Us</h3>
+
+            <div class="social-icons">
+
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                <a href="#"><i class="fab fa-instagram"></i></a>
+
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p class="copyright">
+        © 2026 Zulbery's Kitchen. All Rights Reserved.
+    </p>
+
+</footer>
+<div class="search-overlay" id="searchOverlay">
+
+    <div class="search-box">
+
+        <div class="search-top">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search burgers, pizza, fries..."
+                autocomplete="off"
+            >
+
+            <button id="closeSearch">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+        </div>
+
+        <div id="searchResults"></div>
+
+    </div>
+
+</div>
+
+<button id="backToTop">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+</body>
+
+
+<!-- JavaScript -->
+<script src="script.js"></script>
+
+</html>
+

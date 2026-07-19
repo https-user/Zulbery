@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Chicken Fajita Pizza</title>
+
+<link rel="stylesheet" href="product.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<header class="product-navbar">
+
+    <a href="menu.html" class="back-btn">
+        <i class="fa-solid fa-arrow-left"></i>
+    </a>
+
+    <h2>Product Details</h2>
+
+    <a href="cart.html" class="cart-link">
+
+    <i class="fa-solid fa-cart-shopping"></i>
+
+    <span id="cartBadge">0</span>
+
+</a>
+
+</header>
+
+<section class="product-page">
+
+    <div class="product-image">
+
+        <img src="item-2.jpg" alt="Chicken Fajita Pizza">
+
+    </div>
+
+    <div class="product-details">
+
+        <span class="category">Pizza</span>
+
+        <h1>Chicken Fajita Pizza</h1>
+
+        <div class="price-rating">
+
+            <h2>Rs. 1499</h2>
+
+            <span>⭐ 4.5 (245 Reviews)</span>
+
+        </div>
+
+        <p>
+            Our Chicken Fajita Pizza is topped with tender grilled chicken, colorful bell peppers, onions, black olives, and premium mozzarella cheese on a freshly baked crust. Finished with our flavorful fajita sauce, it delivers the perfect balance of smoky, cheesy, and spicy flavors in every slice.
+        </p>
+
+        <div class="delivery-info">
+
+            <p><i class="fa-solid fa-clock"></i> 20–30 min delivery</p>
+
+            <p><i class="fa-solid fa-fire"></i> Freshly Prepared</p>
+
+        </div>
+
+        <div class="quantity">
+
+            <button onclick="changeQty(-1)">-</button>
+
+            <span id="qty">1</span>
+
+            <button onclick="changeQty(1)">+</button>
+
+        </div>
+
+        <div class="product-buttons">
+
+            <button class="cart-btn" onclick="addToCart()">
+                Add To Cart
+            </button>
+
+            <button class="buy-btn" onclick="buyNow()">
+                Buy Now
+            </button>
+
+            <button class="wish-btn" onclick="toggleWishlist(this)">
+                <i class="fa-regular fa-heart"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script src="product.js"></script>
+
+</body>
+
+</html>
+
